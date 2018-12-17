@@ -21,8 +21,14 @@ void PID::Init(double Kp_in, double Ki_in, double Kd_in) {
 }
 
 void PID::UpdateError(double cte) {
+  cum_cte += cte;
+  p_error = Kp * cte;
+  d_error = Kd * (cte - prev_cte);
+  i_error = Ki * cum_cte;
+  prev_cte = cte;
 }
 
 double PID::TotalError() {
+  return (-p_error - d_error - i_error);
 }
 
