@@ -1,5 +1,7 @@
 # PID Controller Writeup
-**Author: Evan Loshin**
+**Author:** Evan Loshin
+
+**Final Video Submission:** https://youtu.be/3f2AJ73YZe4
 
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
